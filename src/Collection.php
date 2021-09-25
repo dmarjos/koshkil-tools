@@ -58,7 +58,7 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 		return $retVal;
 	}
     public function getIterator() {
-        return new ArrayIterator($this->items);
+        return new \ArrayIterator($this->items);
     }
 
 	public function offsetExists ($offset) {
